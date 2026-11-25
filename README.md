@@ -1,5 +1,16 @@
 # cypress-basico-v2
 
+[![End-to-end tests](https://github.com/erkmnasc/cypress-basico-v2/actions/workflows/ci.yml/badge.svg)](https://github.com/erkmnasc/cypress-basico-v2/actions/workflows/ci.yml)
+
+Meu projeto do curso **Cypress Básico** da Escola Talking About Testing
+(fork do repositório do curso). Os testes estão em `cypress/e2e/`: 19
+cenários do formulário da Central de Atendimento ao Cliente TAT (campos
+obrigatórios, validações, selects, radios, checkboxes, upload de arquivo e
+links), rodando em viewport desktop e mobile no GitHub Actions.
+
+Atualizado para o Cypress 15 (`cypress.config.js`).
+
+---
 Sample project for the basic course of the Talking About Testing online school.
 
 ## Pre-requisites

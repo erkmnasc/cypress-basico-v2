@@ -63,7 +63,7 @@ describe('Central de Atendimento ao Cliente TAT', function () {
         cy.get('.error').should('be.visible')
     })
 
-    it('envia o formuário com sucesso usando um comando customizado', function () {
+    it('envia o formulário com sucesso usando um comando customizado', function () {
         cy.fillMandatoryFieldsAndSubmit()
     })
 
@@ -95,7 +95,7 @@ describe('Central de Atendimento ao Cliente TAT', function () {
         cy.get('.success').should('be.visible')
     })
 
-    it('marca o tipo de atendimento "Feedback', function () {
+    it('marca o tipo de atendimento "Feedback"', function () {
         cy.get('input[type="radio"][value="feedback"]').check().should('have.value', 'feedback')
     })
 

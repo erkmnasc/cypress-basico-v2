@@ -1,14 +1,24 @@
 name: End-to-end tests
-on: [push]
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
 jobs:
-  cypress-run:
-    runs-on: ubuntu-20.04
+  desktop:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
-      - name: Cypress run
+      - uses: actions/checkout@v4
+      - name: Cypress run (desktop)
+        uses: cypress-io/github-action@v6
+
+  mobile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Cypress run (mobile)
         uses: cypress-io/github-action@v6
         with:
-          browser: chrome
+          command: npm run test:mobile
