@@ -6,7 +6,8 @@ Meu projeto do curso **Cypress Básico** da Escola Talking About Testing
 (fork do repositório do curso). Os testes estão em `cypress/e2e/`: 19
 cenários do formulário da Central de Atendimento ao Cliente TAT (campos
 obrigatórios, validações, selects, radios, checkboxes, upload de arquivo e
-links), rodando em viewport desktop e mobile no GitHub Actions.
+links), rodando em viewport desktop e mobile no GitHub Actions a cada push e
+toda segunda-feira.
 
 Atualizado para o Cypress 15 (`cypress.config.js`).
 
